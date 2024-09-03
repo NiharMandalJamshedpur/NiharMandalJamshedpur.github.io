@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye-Catching Webpage</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #5a67d8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #5a67d8;
+            color: white;
+            text-transform: uppercase;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .highlight {
+            background-color: #e2e8f0;
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #fff;
+            background-color: #5a67d8;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #434190;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5a67d8;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Product Inventory</h1>
+
+    <div class="container">
+        <!-- Product Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>SuperWidget</td>
+                    <td>Gadgets</td>
+                    <td>$49.99</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr class="highlight">
+                    <td>002</td>
+                    <td>PowerGizmo</td>
+                    <td>Tools</td>
+                    <td>$29.99</td>
+                    <td>Low Stock</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>ZoomMaster 3000</td>
+                    <td>Optics</td>
+                    <td>$89.99</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr class="highlight">
+                    <td>004</td>
+                    <td>BrightLight Pro</td>
+                    <td>Lighting</td>
+                    <td>$19.99</td>
+                    <td>Out of Stock</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>SoundBlaster X</td>
+                    <td>Audio</td>
+                    <td>$59.99</td>
+                    <td>In Stock</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Call to Action Button -->
+        <a href="#" class="btn">Order Now</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
