@@ -2,145 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eye-Catching Webpage</title>
-    <style>
-        /* Base styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 30px;
-            color: #5a67d8;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Table styles */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #5a67d8;
-            color: white;
-            text-transform: uppercase;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        .highlight {
-            background-color: #e2e8f0;
-        }
-
-        /* Button styles */
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 20px 0;
-            color: #fff;
-            background-color: #5a67d8;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #434190;
-        }
-
-        /* Footer styles */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #5a67d8;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+    <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Book Zone</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-right">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/login.html">Login</a></li>
+            <li><a href="/Register.html">Create Account</a></li>
+        </div>
+    </nav>
 
-    <h1>Product Inventory</h1>
+    <div class="section-1">
+        <div class="Section-1-text">
+            <center><h1>Welcome to Book Zone</h1>
+            <p>You can find out yours book here.</p>
+            <a href="/products.html" class="btn">Explore Here  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+           
+        </center>
+        </div>
+    </div>
+    <div class="section-2">
+        <h2>Featured Products</h2>
+        <!-- <a href="#"><img src="./images/img_2.jpg" alt=""> -->
+        <div class="gallery">
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_2.jpg" alt="img-1">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_3.jpeg" alt="img-2">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_4.jpg" alt="img-3">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_5.jpg" alt="img-4">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_6.jpg" alt="img-5">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_7.jpg" alt="img-6">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_8.jpg" alt="img-7">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_9.jpg" alt="img-8">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_10.jpg" alt="img-9">
+                </a>
+            </div>
+            <div class="image-holder">
+                <a href="#">
+                    <img src="./images/img_11.jpg" alt="img-10">
+                </a>
+            </div>
 
-    <div class="container">
-        <!-- Product Table -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Product ID</th>
-                    <th>Product Name</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                    <th>Stock Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>001</td>
-                    <td>SuperWidget</td>
-                    <td>Gadgets</td>
-                    <td>$49.99</td>
-                    <td>In Stock</td>
-                </tr>
-                <tr class="highlight">
-                    <td>002</td>
-                    <td>PowerGizmo</td>
-                    <td>Tools</td>
-                    <td>$29.99</td>
-                    <td>Low Stock</td>
-                </tr>
-                <tr>
-                    <td>003</td>
-                    <td>ZoomMaster 3000</td>
-                    <td>Optics</td>
-                    <td>$89.99</td>
-                    <td>In Stock</td>
-                </tr>
-                <tr class="highlight">
-                    <td>004</td>
-                    <td>BrightLight Pro</td>
-                    <td>Lighting</td>
-                    <td>$19.99</td>
-                    <td>Out of Stock</td>
-                </tr>
-                <tr>
-                    <td>005</td>
-                    <td>SoundBlaster X</td>
-                    <td>Audio</td>
-                    <td>$59.99</td>
-                    <td>In Stock</td>
-                </tr>
-            </tbody>
-        </table>
 
-        <!-- Call to Action Button -->
-        <a href="#" class="btn">Order Now</a>
+        </div>
+
+    </div>
+    <!-- <div class="section-3">
+        <h3>Products</h3>
+        <br>
+        <div class="view-card">
+            <div class="card">
+                <center><img src="./images/img_11.jpg" alt="Avatar"></center>
+                <div class="container">
+                  <center>
+                    <h4><b>John Doe</b></h4> 
+                    <p>Architect & Engineer</p>
+                  </center> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/img_11.jpg" alt="Avatar">
+                <div class="container">
+                  <h4><b>John Doe</b></h4> 
+                  <p>Architect & Engineer</p> 
+                </div>
+            </div>
+
+        </div>
+
+    </div>  -->
+
+    <div class="section-4">
+        <h2>Featured Brands</h2>
+        <div class="brand">
+            <img src="./images/book_logo1.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="./images/book_logo_6.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="./images/book_logo3.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="./images/book_logo_4.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="./images/book_logo_5.png" alt="">
+        </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
-    </footer>
+    <!-- section-5 contact us  -->
+    <div class="section-5">
+        
+              <h2>Contact Us</h2>
+              <p>leave us a message or suggestion:</p>
 
+              <div class="column">
+                <form action="/index.html">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+
+    </div>
+    <footer>
+        <p>Author:<a href="https://sudeep-portfolio.netlify.app">Sudeep Acahrjee</a> <br>
+            <a href="mailto:sudeepacharjeegp@gmai.com">sudeepacharjee@gmail.com</a></p>
+    </footer>
 </body>
 </html>
